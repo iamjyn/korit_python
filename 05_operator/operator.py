@@ -33,4 +33,3 @@ print(not a and b) #False
 print(a or b) #True
 print(not b) #True
 
-#조건연산자
