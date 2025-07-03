@@ -61,7 +61,7 @@ print(b.lstrip()) #왼쪽 공백 제거
 print(b.rstrip()) #오른쪽 공백 제거
 print(b.strip()) #양쪽 공백 제거
 print(a.replace("short", "long")) #대체 함수 / old => new (모두 바꾸기 느낌쓰)
-print(a.replace(" ", ""))
+print(a.replace(" ", "")) #(공백없애기)
 print(a.split()) #값을 아무것도 넣지 않으면 공백, 탭, 엔터 기준으로 나눔
 c = "a:b:c:d"
 print(c.split(":"))
@@ -72,5 +72,5 @@ print(c.split(":"))
 
 email = input("이메일 : ")
 # print("아이디 :", email.replace("@naver.com", ""))
-print("아이디 :", email[:email.index("@")])
-print("아이디 :", email.split("@")[0])
+print("아이디 :", email[:email.index("@")]) #처음부터 email 인덱스 @ 앞까지
+print("아이디 :", email.split("@")[0]) #@를 기준으로 나누는데 그중에 [0]번째 인덱스 값만
