@@ -41,14 +41,14 @@ from multiprocessing.process import active_children
 #실습문제
 #1. 1부터 100까지 짝수만 출력하기
 
-num = 1
-while num <= 100:
-    num += 1
-
-    if num % 2 == 1:
-        continue
-
-    print(num)
+# num = 1
+# while num <= 100:
+#     num += 1
+#
+#     if num % 2 == 1:
+#         continue
+#
+#     print(num)
 
 #강사님 풀이-1
 # num = 2
@@ -66,3 +66,11 @@ while num <= 100:
 #실습 숙제
 #5의 배수 출력 1~50까지 (30에서 멈추기)
 
+num = 0
+while num <= 50:
+    num += 5
+
+    if num > 30:
+        break #반복을 종료하는 코드
+
+    print(num)
